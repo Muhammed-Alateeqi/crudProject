@@ -30,6 +30,7 @@ export const Products = (props) => {
                                 <td>{product.id}</td>
                                 <td>{product.title}</td>
                                 <td>{product.price}$</td>
+                                {/*operations */}
                                 <td>
                                     <button className='btn btn-outline-danger ms-1'>Delete</button>
                                     <button className='btn btn-outline-success ms-2'>View</button>
