@@ -1,0 +1,24 @@
+.side-bar{
+  height: 100vh;
+  background-color:#eee;
+}
+
+.side-bar li{
+  padding: 10px 0px;
+  text-align: center;
+  display: flex;
+  justify-content: flex-start;
+}
+.side-bar a{
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  transition:  ease .2s ;
+}
+.side-bar a:hover{
+  text-decoration: none;
+  color: #be3535;
+  font-size: 16px;
+  transition: ease .2s ;
+
+}
