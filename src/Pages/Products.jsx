@@ -21,22 +21,23 @@ export const Products = (props) => {
                         <th>ID</th>
                         <th>Title</th>
                         <th>Price</th>
+                        <th>Description</th>
                         <th>Operations</th>
                     </tr>
                     </thead>
                     <tbody>
                     {products.map((product) => (
-                            <tr>
-                                <td>{product.id}</td>
-                                <td>{product.title}</td>
-                                <td>{product.price}$</td>
-                                {/*operations */}
-                                <td>
-                                    <button className='btn btn-outline-danger ms-1'>Delete</button>
-                                    <button className='btn btn-outline-success ms-2'>View</button>
-                                    <button className='btn btn-outline-dark ms-2'>Edit</button>
-                                </td>
-                            </tr>
+                        <tr key={product.id}>
+                            <td>{product.id}</td>
+                            <td>{product.title}</td>
+                            <td>{product.price}$</td>
+                            <td>{product.description.slice(0, 40)}..etc </td>
+                            <td>
+                                <button className='btn btn-outline-danger ms-1'>Delete</button>
+                                <button className='btn btn-outline-success ms-2'>View</button>
+                                <button className='btn btn-outline-dark ms-2'>Edit</button>
+                            </td>
+                        </tr>
 
                     ))}
                     </tbody>
