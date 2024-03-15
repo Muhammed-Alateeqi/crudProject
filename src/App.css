@@ -20,5 +20,26 @@
   color: #be3535;
   font-size: 16px;
   transition: ease .2s ;
+}
 
+.product-details{
+  width: 500px;
+  border: 1px solid rgba(0, 0, 0, 0.295);
+  border-radius: 20px;
+  text-align: center;
+  padding: 20px;
+}
+.product-details h1{
+    font-size: 26px;
+    color: rgb(102, 37, 37);
+}
+.product-details h5{
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+}
+.productForm{
+  border: 1px solid rgba(126, 123, 123, 0.58);
+  width: 400px;
+  padding: 20px;
+  border-radius:20px;
 }

@@ -6,6 +6,7 @@ import {Routes ,Route} from "react-router-dom";
 import {Home} from "./Pages/Home";
 import {Products} from "./Pages/Products";
 import {AddNewProduct} from "./Pages/AddNewProduct";
+import View from './Pages/View';
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
               <Route path='/' element={<Home />}/>
               <Route path='/products' element={<Products />}/>
               <Route path='products/add' element={<AddNewProduct />}/>
+              <Route path='products/:productID' element={<View />}/>
             </Routes>
         </div>
       </div>
